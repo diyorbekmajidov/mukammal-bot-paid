@@ -7,5 +7,4 @@ from loader import dp
 async def photo_handler(msg:types.Message):
     chat_id = msg.chat.id
     photo = msg.photo[0].file_id
-    print(photo)
     await msg.answer_photo(photo)
